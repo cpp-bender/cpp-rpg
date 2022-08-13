@@ -1,4 +1,6 @@
 #include <iostream>
+#include "src\Game.h"
+
 
 int main()
 {
@@ -6,6 +8,9 @@ int main()
 
 	while (m_applicationRunning)
 	{
-		std::cout << "Welcome TO RPG" << std::endl;
+		//Game
+		Game game("Text Based RPG");
+
+		std::cin.get();
 	}
 }
