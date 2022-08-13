@@ -1,6 +1,7 @@
 #include <iostream>
 #include "src\Game.h"
 #include <Windows.h>
+#include "src\GameMacros.h"
 
 int main()
 {
@@ -13,6 +14,10 @@ int main()
 
 		game.Init();
 
-		std::cin.get();
+		Sleep(1000);
+
+		game.Start();
+
+		waitAnyKey();
 	}
 }

@@ -15,11 +15,16 @@ Game::~Game()
 
 void Game::Init()
 {
-	for (size_t i = 0; i <strlen(m_WelcomeText); i++)
-	{
-		print(m_WelcomeText[i]);
-		Sleep(100);
-	}
-
+	printSlow(m_WelcomeText);
+	
 	println("");
+}
+
+void Game::Start()
+{
+	printSlow("Press any key to continue");
+
+	waitAnyKey();
+
+	system("CLS");
 }
