@@ -80,14 +80,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\stories\BaseStory.cpp" />
     <ClCompile Include="src\Game.cpp" />
     <ClCompile Include="Main.cpp" />
-    <ClCompile Include="src\Story.cpp" />
+    <ClCompile Include="src\stories\StoryA.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\stories\BaseStory.h" />
     <ClInclude Include="src\GameMacros.h" />
     <ClInclude Include="src\Game.h" />
-    <ClInclude Include="src\Story.h" />
+    <ClInclude Include="src\stories\StoryA.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

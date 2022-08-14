@@ -21,7 +21,10 @@
     <ClCompile Include="src\Game.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\Story.cpp">
+    <ClCompile Include="src\stories\StoryA.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\stories\BaseStory.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -32,7 +35,10 @@
     <ClInclude Include="src\GameMacros.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\Story.h">
+    <ClInclude Include="src\stories\StoryA.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\stories\BaseStory.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

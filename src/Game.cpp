@@ -3,15 +3,11 @@
 
 #include "Game.h"
 #include "GameMacros.h"
+#include "stories\BaseStory.h"
 
-Game::Game()
+Game::Game(BaseStory* story)
 {
-	SetConsoleTitleA(m_Name);
-}
-
-Game::~Game()
-{
-
+	m_Story = story;
 }
 
 void Game::Awake()
@@ -21,23 +17,15 @@ void Game::Awake()
 	println("");
 }
 
-void Game::Start(Story story)
+void Game::Start()
 {
-	m_Story = story;
-
 	printSlow("Press enter key to continue");
 
 	waitAnyKey();
 
 	system("CLS");
-}
 
-void Game::Update()
-{
-	while (true)
-	{
-		m_Story.play();
-	}
+	m_Story->Start();
 }
 
 void Game::End()
