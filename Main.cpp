@@ -1,23 +1,23 @@
-#include <iostream>
+#include <windows.h>
+
 #include "src\Game.h"
-#include <Windows.h>
 #include "src\GameMacros.h"
+#include "src\Story.h"
 
 int main()
 {
-	bool m_ApplicationRunning = 1;
+	//Game Loop
+	Game game;
 
-	while (m_ApplicationRunning)
-	{
-		//Game Code
-		Game game;
+	game.Awake();
 
-		game.Init();
+	Sleep(1000);
 
-		Sleep(1000);
+	Story story;
 
-		game.Start();
+	game.Start(story);
 
-		waitAnyKey();
-	}
+	game.Update();
+
+	game.End();
 }

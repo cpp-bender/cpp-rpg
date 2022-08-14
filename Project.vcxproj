@@ -82,10 +82,12 @@
   <ItemGroup>
     <ClCompile Include="src\Game.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="src\Story.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\GameMacros.h" />
     <ClInclude Include="src\Game.h" />
+    <ClInclude Include="src\Story.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

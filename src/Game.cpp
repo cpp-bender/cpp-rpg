@@ -1,6 +1,7 @@
-#include "Game.h"
 #include <iostream>
-#include <Windows.h>
+#include <windows.h>
+
+#include "Game.h"
 #include "GameMacros.h"
 
 Game::Game()
@@ -13,18 +14,33 @@ Game::~Game()
 
 }
 
-void Game::Init()
+void Game::Awake()
 {
 	printSlow(m_WelcomeText);
 	
 	println("");
 }
 
-void Game::Start()
+void Game::Start(Story story)
 {
-	printSlow("Press any key to continue");
+	m_Story = story;
+
+	printSlow("Press enter key to continue");
 
 	waitAnyKey();
 
 	system("CLS");
+}
+
+void Game::Update()
+{
+	while (true)
+	{
+		m_Story.play();
+	}
+}
+
+void Game::End()
+{
+	//TODO:Complete
 }
