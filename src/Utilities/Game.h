@@ -1,5 +1,5 @@
 #pragma once
-#include "stories\BaseStory.h"
+#include "../stories/BaseStory.h"
 
 class Game
 {

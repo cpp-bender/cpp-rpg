@@ -2,7 +2,7 @@
 #include <windows.h>
 
 //Custom includes
-#include "src\Game.h"
+#include "src\Utilities\Game.h"
 #include "src\stories\BaseStory.h"
 #include "src\stories\StoryA.h"
 

@@ -1,7 +1,7 @@
 #include <iostream>
 
 #include "StoryA.h"
-#include "../Util.h"
+#include "../Utilities/Util.h"
 
 StoryA::StoryA()
 {

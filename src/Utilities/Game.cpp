@@ -3,7 +3,7 @@
 
 #include "Game.h"
 #include "Util.h"
-#include "stories\BaseStory.h"
+#include "../stories/BaseStory.h"
 
 Game::Game(BaseStory* story)
 {
