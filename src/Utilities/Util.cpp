@@ -12,6 +12,13 @@ void Util::PrintSlow(const std::string& text)
 
 		Sleep(m_Delay);
 	}
+
+	PrintLine();
+}
+
+void Util::Wait(const float& delay)
+{
+	Sleep(delay * 1000.0f);
 }
 
 void Util::PrintLine()

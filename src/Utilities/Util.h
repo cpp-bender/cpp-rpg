@@ -8,6 +8,7 @@ class Util
 {
 public:
 	static void PrintSlow(const std::string& text);
+	static void Wait(const float& delay);
 	static void PrintLine();
 	static void WaitAnyKey();
 private:
