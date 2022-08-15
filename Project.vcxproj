@@ -80,15 +80,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\Utilities\Util.cpp" />
     <ClCompile Include="src\stories\BaseStory.cpp" />
-    <ClCompile Include="src\Game.cpp" />
+    <ClCompile Include="src\Utilities\Game.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="src\stories\StoryA.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\stories\BaseStory.h" />
-    <ClInclude Include="src\GameMacros.h" />
-    <ClInclude Include="src\Game.h" />
+    <ClInclude Include="src\Utilities\Util.h" />
+    <ClInclude Include="src\Utilities\Game.h" />
     <ClInclude Include="src\stories\StoryA.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

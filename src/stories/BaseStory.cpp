@@ -1,5 +1,6 @@
 #include "BaseStory.h"
 #include <iostream>
+#include <Windows.h>
 
 void BaseStory::Start()
 {
