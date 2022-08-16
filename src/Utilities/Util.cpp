@@ -30,3 +30,13 @@ void Util::WaitAnyKey()
 {
 	std::cin.get();
 }
+
+void Util::Clear()
+{
+	system("CLS");
+}
+
+void Util::SetTitle(const char* title)
+{
+	SetConsoleTitleA(title);
+}

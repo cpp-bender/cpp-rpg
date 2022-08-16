@@ -8,6 +8,7 @@ class BaseStory
 public:
 	virtual void Start();
 	virtual void Choose();
-	virtual void End();
+	virtual void SuccessEnd();
+	virtual void FailEnd();
 };
 

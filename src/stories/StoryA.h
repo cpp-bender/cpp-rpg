@@ -7,6 +7,7 @@ public:
 	StoryA();
 	void Start() override;
 	void Choose() override;
-	void End() override;
+	void SuccessEnd() override;
+	void FailEnd() override;
 };
 

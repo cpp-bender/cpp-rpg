@@ -12,23 +12,61 @@ Game::Game(BaseStory* story)
 
 void Game::Awake()
 {
-	Util::PrintSlow(m_WelcomeText);
+	Util::SetTitle("Simple RPG: Prologue");
 
-	Util::PrintLine();
+	Util::PrintSlow("Welcome to Simple RPG");
+
+	Util::Wait(1.0F);
+
+	Util::PrintSlow("What you are about to play is just a story came out of a Game Dev.");
+
+	Util::Wait(1.0F);
 }
 
 void Game::Start()
 {
-	Util::PrintSlow("Press enter key to continue");
+	Util::PrintSlow("Now, press enter key to continue");
 
 	Util::WaitAnyKey();
 
-	system("CLS");
+	Util::Clear();
 
 	m_Story->Start();
 }
 
 void Game::End()
 {
-	//TODO:Complete
+	Util::Clear();
+
+	Util::SetTitle("Simple RPG: Game Over");
+
+	Util::PrintSlow("Turns out that not every story has a meaning in life");
+
+	Util::Wait(1.0f);
+
+	Util::PrintSlow("For example, this story is completely bullshit");
+
+	Util::Wait(1.0f);
+
+	Util::PrintSlow("But, the creator of story which is me has made it for only one purpose");
+
+	Util::Wait(1.0f);
+
+	Util::PrintSlow("Which is ............");
+
+	Util::PrintSlow("GET INSIDE C++");
+
+	Util::Wait(1.0f);
+
+	Util::PrintSlow("Now, Whether or not You understand this story, I got what I wanted");
+
+	Util::Wait(1.0F);
+
+	Util::PrintSlow("I MADE MY EVER FIRST GAME WRITTEN IN C++");
+
+	Util::Wait(1.0f);
+
+	Util::PrintSlow("So, big thanks to you. You now can leave :)");
+
+	Util::Wait(1.0f);
 }

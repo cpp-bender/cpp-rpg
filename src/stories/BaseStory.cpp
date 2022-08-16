@@ -4,15 +4,16 @@
 
 void BaseStory::Start()
 {
-	Choose();
 }
 
 void BaseStory::Choose()
 {
-	End();
 }
 
-void BaseStory::End()
+void BaseStory::SuccessEnd()
 {
-	return;
+}
+
+void BaseStory::FailEnd()
+{
 }

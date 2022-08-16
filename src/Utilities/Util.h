@@ -11,6 +11,8 @@ public:
 	static void Wait(const float& delay);
 	static void PrintLine();
 	static void WaitAnyKey();
+	static void Clear();
+	static void SetTitle(const char* title);
 private:
 	const static int m_Delay = 100;
 };
